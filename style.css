@@ -1,0 +1,170 @@
+:root {
+  --primary: #2C3E50;
+  --accent: #3498DB;
+  --bg: #F5F6FA;
+  --text: #2C3E50;
+  --border: #E0E0E0;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Inter', sans-serif;
+}
+
+body {
+  background: var(--bg);
+  color: var(--text);
+  line-height: 1.6;
+  padding: 2rem;
+}
+
+.container {
+  max-width: 800px;
+  margin: 0 auto;
+  background: white;
+  padding: 2rem;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+h1 {
+  font-weight: 300;
+  color: var(--primary);
+  margin-bottom: 1rem;
+  font-size: 2rem;
+}
+
+.description {
+  color: var(--text);
+  margin-bottom: 2rem;
+  font-size: 0.95rem;
+  line-height: 1.6;
+}
+
+.input-section {
+  margin-bottom: 2rem;
+}
+
+.input-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+
+.controls {
+  display: flex;
+  gap: 1rem;
+}
+
+textarea {
+  width: 100%;
+  min-height: 150px;
+  padding: 1rem;
+  border: 1px solid var(--border);
+  border-radius: 4px;
+  font-size: 1rem;
+  margin-bottom: 1rem;
+  resize: vertical;
+}
+
+button {
+  background: var(--accent);
+  color: white;
+  border: none;
+  padding: 0.8rem 1.5rem;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 0.9rem;
+  transition: all 0.2s;
+}
+
+button:hover {
+  opacity: 0.9;
+  transform: translateY(-1px);
+}
+
+button.secondary {
+  background: transparent;
+  color: var(--accent);
+  border: 1px solid var(--accent);
+}
+
+.results {
+  border-top: 1px solid var(--border);
+  padding-top: 2rem;
+}
+
+.pattern-group {
+  margin-bottom: 1.5rem;
+  transition: all 0.3s;
+}
+
+.pattern-group:hover {
+  transform: translateX(5px);
+}
+
+.pattern-title {
+  font-size: 0.9rem;
+  text-transform: uppercase;
+  color: var(--accent);
+  margin-bottom: 0.5rem;
+  letter-spacing: 0.5px;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.pattern-title i {
+  color: var(--accent);
+  margin-right: 0.5rem;
+}
+
+.pattern-count {
+  background: var(--accent);
+  color: white;
+  padding: 0.2rem 0.5rem;
+  border-radius: 12px;
+  font-size: 0.8rem;
+}
+
+.pattern-items {
+  background: var(--bg);
+  padding: 1rem;
+  border-radius: 4px;
+  font-size: 0.95rem;
+}
+
+.highlight {
+  background-color: rgba(52, 152, 219, 0.1);
+  padding: 0.1rem 0.3rem;
+  border-radius: 2px;
+  transition: background-color 0.2s;
+}
+
+.highlight:hover {
+  background-color: rgba(52, 152, 219, 0.2);
+}
+
+.examples {
+  margin-top: 1rem;
+  padding: 1rem;
+  background: #f8f9fa;
+  border-radius: 4px;
+  font-size: 0.9rem;
+}
+
+.shortcut-hint {
+  color: #666;
+  font-size: 0.8rem;
+  margin-top: 0.5rem;
+}
+
+.footer {
+  margin-top: 2rem;
+  text-align: center;
+  font-size: 0.8rem;
+  color: #666;
+}
