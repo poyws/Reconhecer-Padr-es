@@ -25,7 +25,7 @@ Este projeto é uma ferramenta de reconhecimento de padrões em textos, que iden
 
 1. **Clonar o repositório:**
    ```bash
-   git clone https://github.com/seu-usuario/reconhecimento-padroes-texto.git
+   git clone https://github.com/poyws/Reconhecer-Padr-es
 
 2. Abrir o arquivo index.html em um navegador.
 
