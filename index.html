@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Reconhecimento de Padrões em Textos</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Reconhecimento de Padrões em Textos</h1>
+    
+    <div class="description">
+      Esta ferramenta identifica automaticamente padrões comuns em textos, incluindo:
+      <ul style="margin-left: 1.5rem; margin-top: 0.5rem;">
+        <li>Datas (formatos DD/MM/AAAA ou DD-MM-AAAA) 
+          <div class="tooltip">
+            <i class="fas fa-info-circle"></i>
+            <span class="tooltiptext">Aceita formatos: 31/12/2024 ou 31-12-2024</span>
+          </div>
+        </li>
+        <li>Endereços de e-mail
+          <div class="tooltip">
+            <i class="fas fa-info-circle"></i>
+            <span class="tooltiptext">exemplo@dominio.com</span>
+          </div>
+        </li>
+        <li>Números de telefone
+          <div class="tooltip">
+            <i class="fas fa-info-circle"></i>
+            <span class="tooltiptext">(XX) XXXX-XXXX ou XXXXXXXXXX</span>
+          </div>
+        </li>
+        <li>Nomes próprios
+          <div class="tooltip">
+            <i class="fas fa-info-circle"></i>
+            <span class="tooltiptext">Nome Sobrenome (primeira letra maiúscula)</span>
+          </div>
+        </li>
+        <li>URLs
+          <div class="tooltip">
+            <i class="fas fa-info-circle"></i>
+            <span class="tooltiptext">https://exemplo.com</span>
+          </div>
+        </li>
+      </ul>
+    </div>
+    
+    <div class="input-section">
+      <div class="input-header">
+        <div class="controls">
+          <button onclick="analisarPadroes()">Analisar Padrões</button>
+          <button class="secondary" onclick="limparTexto()">Limpar</button>
+        </div>
+      </div>
+      
+      <textarea id="textInput" placeholder="Digite ou cole seu texto aqui..."></textarea>
+      <div class="shortcut-hint">Dica: Use Ctrl + Enter para analisar rapidamente</div>
+      
+      <div class="examples">
+        <strong>Exemplo de texto:</strong><br>
+        João Silva nasceu em 15/04/1990. Seu email é joao.silva@email.com e seu telefone é (11) 98765-4321. 
+        Ele trabalha na empresa https://empresa.com.br junto com Maria Santos.
+      </div>
+    </div>
+    
+    <div class="results" id="results"></div>
+    
+    <div class="footer">
+      Desenvolvido para análise de padrões em texto | 2024
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
